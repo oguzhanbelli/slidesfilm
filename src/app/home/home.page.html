@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-header  [translucent]="true">
+  <!-- <ion-toolbar>
+     <ion-title>
+       Blank
+     </ion-title>
+   </ion-toolbar>-->
+ </ion-header>
+<ion-content color="dark" [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    <ion-toolbar color="dark">
+      <ion-title > <ion-icon  name="logo-youtube"></ion-icon> </ion-title>
     </ion-toolbar>
+    <div class="padding5Top"></div>
+ <ion-card color="dark">
+  <ion-searchbar color="dark" placeholder="Arama" showCancelButton="focus" animated></ion-searchbar>
+ </ion-card> 
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-slides  [options]="options">
+      <ion-slide     >
+
+        <ion-grid >
+          <ion-row>
+            <ion-col size="12" class="poster-col">
+              <img  routerLink="/film1" class="poster" src="https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Black Panther</h5>
+              <p class="ion-no-margin rate"> <ion-icon name="star"></ion-icon> 8.5 </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+  
+
+      </ion-slide>
+      <ion-slide >
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" class="poster-col">
+              <img routerLink="/film2" class="poster" src="https://images.moviepostershop.com/dora-and-the-lost-city-of-gold-movie-poster-1000779403.jpg" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Dora and The Lost City of Gold</h5>
+              <p class="ion-no-margin rate"> <ion-icon name="star"></ion-icon> 7.5 </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+  
+
+      </ion-slide>
+      <ion-slide>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" class="poster-col">
+              <img routerLink="/film3" class="poster" src="https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1280x1280/products/89058/93685/Joker-2019-Final-Style-steps-Poster-buy-original-movie-posters-at-starstills__62518.1572351179.jpg?c=2?imbypass=on" alt="">
+            </ion-col>
+            <ion-col size="12">
+              <h5 class="ion-no-margin">Joker</h5>
+              <p class="ion-no-margin rate"> <ion-icon name="star"></ion-icon> 9.5 </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+  
+
+      </ion-slide>
+    </ion-slides>
   </div>
+
 </ion-content>

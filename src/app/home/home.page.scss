@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+ion-slides {
+  height: 100%;
+}
+.poster-col{
+  height: 400px;
+  img{
+    border-radius: 40px;
+  }
+}
+.rate{
+  font-size: 14px;
+  padding-top: 4px;
+
+  ion-icon{
+    color: gold;
+  }
+
+}
+h5{
+  margin-top: 4px;
+   
+}
+.swiper-slide-prev{
+  opacity: .5;
+  transform: rotate(-8deg);
+}
+.swiper-slide-next{
+  opacity: .5;
+  transform: rotate(8deg);
+}
+.swiper-slide{
+ transition: .4s all;
+}
+ion-title {
+  ion-icon{
+    width: 40px; height: 40px;
+  }
+ 
+}
+.padding5Top{
+  padding-top: 5px;
+}
+ion-card{
+  border-radius: 25px;
+}
